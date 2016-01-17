@@ -1,0 +1,57 @@
+---
+layout: workshop
+title: Codebreakers
+course: workshop
+
+standard: Pre-NCEA
+heading: Codebreakers
+tagline: AS-91371 Demonstrate understanding of advanced concepts from computer science
+
+studentsurvey: undefined
+teachersurvey: undefined
+
+chapters:
+
+    - name: welcome
+      subtitle: Course Intro
+      title: Welcome
+
+    - name: codebook
+      subtitle: Chapter One
+      title: Building a Codebook
+
+    - name: decoding
+      subtitle: Chapter Two
+      title: Decoding
+
+    - name: datarepresentation
+      subtitle: Chapter Three
+      title: Data Representation
+    
+    - name: encryption
+      subtitle: Chapter Four
+      title: Error Control
+
+    - name: compression
+      subtitle: Chapter Five
+      title: Compression
+
+    - name: errorcontrol
+      subtitle: Chapter Six
+      title: Error Control
+
+---
+
+<div class="row">
+
+    {% for chapter in page.chapters %}
+
+
+        {% include chapter-tile.html %}
+
+
+    {% endfor %}
+
+</div>
+
+

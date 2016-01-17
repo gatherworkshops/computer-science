@@ -1,0 +1,34 @@
+name: Computer Science
+
+baseurl: "/computer-science"
+theme_assets: "/computer-science/theme/assets"
+theme_images: "/computer-science/theme/assets/images"
+course_images: "/computer-science/media/images"
+
+markdown: kramdown
+exclude: ["node_modules", "Gemfile", "Gruntfile.js", "package.json", "README.md"]
+
+kramdown:
+  input: GFM
+  enable_coderay: false
+
+# Where things are
+source:       .
+destination:  ./_site
+layouts_dir:  ./theme/_layouts
+includes_dir: ./theme/_includes
+sass:
+    sass_dir: ./theme/_sass
+
+# custom collections
+collections:
+  assets:
+    output: true
+  courses:
+    output: true
+    layout: chapter
+
+
+# theme
+themecolor: "#c40259"
+

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Data Representation</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/computer-science/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/computer-science/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/computer-science/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/computer-science/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/computer-science/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/computer-science/theme/assets/submodules/prism/prism.css">
+        <script src="/computer-science/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/computer-science/favicon.ico">
+
+    </head>
+
+    <body class=" hello">
+<nav id="mainNavigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container-fluid">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/computer-science/">
+      	<img class="avatar" src="/computer-science/theme/assets/images/gw-avatar.png">
+      	Computer Science 
+        <span class="title"> | </span>
+      </a>
+
+      
+      <!-- chapter switcher -->
+      <ul class="chapter-switcher nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Representation <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            
+
+          </ul>
+        </li>
+      </ul>
+      <!-- end chapter switcher -->
+
+      
+
+    </div>
+
+
+    
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+      	
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+		<div class="slideshow">
+
+			<div class="reveal">
+
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/computer-science/media/images/theme/theme-tile.svg" 
+		data-background-color="#c40259"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/computer-science/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="data-representation">Data Representation</h1>
+<p><em>Storing stuff that’s not just numbers</em></p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="bits-and-bytes">Bits and Bytes</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/bits-and-bytes.svg" alt="A byte is made up of 8 bits" height="300" /></p>
+
+<p>We usually use bits in groups of 8, allowing for numbers <br />
+large enough to cover most use cases.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="how-big-is-a-byte">How “big” is a byte?</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/byte-size.svg" alt="Representing numbers using bits" /></p>
+
+<p>How many letters, numbers or symbols <br />
+could we represent with 8 bits?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="bits-gives-us-256-combinations">8 bits gives us 256 combinations</h2>
+
+<p>The lowest number we can store is zero…<br />
+The largest number we can store is 255…<br />
+There are 26 letters in the alphabet…</p>
+
+<p><strong>We can do <em>way</em> more than just the alphabet!</strong></p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="so-what-can-we-store">So what can we store?</h2>
+
+<p>Although each byte can only go as high as 255,<br />
+we can store groups of bytes to make up more complex data.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="well-look-at">We’ll look at</h2>
+
+<ul class="flex-list">
+  <li><strong>Numbers</strong><br />
+Going beyond integers.</li>
+  <li><strong>Documents</strong><br />
+Letters and symbols.</li>
+  <li><strong>Images</strong><br />
+Colours in pixels.</li>
+</ul>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="numbers">Numbers</h2>
+
+<p>How do we describe a number that’s not an integer?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="negative-numbers">Negative Numbers</h2>
+
+<p>We usually set aside the leftmost bit to represent positive or negative.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="decimals">Decimals</h2>
+
+<p>???</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="challenge">Challenge</h2>
+
+<p>Decode the three numbers</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="ascii">ASCII</h2>
+
+<p>The ASCII format is a way of storing letters, <br />
+numbers and symbols used in blocks of text.</p>
+
+<p>Many <code>.txt</code> files are stored in the ASCII format.</p>
+
+
+<aside class="notes">
+
+We pronounce ASCII as "Ass-key", but it's actually short for "American Standard Code for Information Interchange".
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="ascii-alphabet">ASCII Alphabet</h2>
+
+<p>Long story short:</p>
+
+<ul>
+  <li>A-Z is 65-90</li>
+  <li>a-z is 97-122</li>
+</ul>
+
+<p>Can you see a pattern? Hide the 3 leftmost bits of each column…</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="big-vs-little">Big vs Little</h2>
+
+<p>That means that the only difference between uppercase letters and lowercase letters is a single bit!</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="ascii-numbers">ASCII Numbers</h2>
+
+<p>Look! It’s the same pattern again!</p>
+
+<p>The <strong>characters</strong> 0-9 don’t map to the binary <strong>numbers</strong> 0-9, but they still follow an easily recognisable pattern.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="ascii-special-characters">ASCII Special Characters</h2>
+
+<p>No pattern here, but only because symbols don’t have a natural order.</p>
+
+
+<aside class="notes">
+
+Look at your keyboard though - how many of the symbols in the ASCII table line up with the symbols above the numbers on your keyboard?
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="challenge">Challenge</h2>
+
+<p>Decode the ASCII text file</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="images">Images</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/photo-pixels.jpg" alt="Close-up of the pixels in a photograph" /></p>
+
+<p>Most images contain millions of pixels</p>
+
+
+<aside class="notes">
+
+All digital images are made up of pixels.
+
+We talk about cameras having a certain number of "megapixels". A megapixel is a _million_ pixels!
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="bitmap-images">Bitmap Images</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/mario-pixel-art.png" alt="Pixel Art: Mario, Luigi, Peach and Toad by Hama-Girl" /><br />
+<!-- .element height="350" --></p>
+
+<p>In smaller images such as pixel art, there are fewer colour points to be stored.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="black-and-white">Black and White</h2>
+
+<p>The most simple image we can represent would be black and white:<br />
+one bit for every pixel.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="image-size">Image Size</h2>
+
+<p>1101010001010010100001010110101010<br />
+1010101010010101010100101010101010<br />
+11101010110101001</p>
+
+<p>In the computer, all the bits are stored in a long line.<br />
+How do we know how wide and how high the image should be?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="file-headers">File Headers</h2>
+
+<p>We can add some extra bits at the start of the file<br />
+to record the image’s width and height.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="challenge">Challenge</h2>
+
+<p>Set the image to the correct dimensions.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="colours">Colours</h2>
+
+<p>// 1-bit 2-bit 4-bit 8-bit 16-bit</p>
+
+<p>The number of colour options we have for each pixel is determined by<br />
+the number of bits we allow for each pixel.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="bit-images">24bit Images</h2>
+
+<p>A 24bit image gives each pixel three bytes to store its colour.<br />
+One byte for red, one for green, and one for blue.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="challenge">Challenge</h2>
+
+<p>Complete the binary crossword.<br />
+Yes, it’s ridiculous. Enjoy!</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="bonus-challenge">Bonus Challenge</h2>
+
+<p><strong>Find as many hidden messages as you can in this video.</strong></p>
+
+<p>Do this one in your own time if you feel like a challenge!</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<p><img src="/computer-science/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="data-representation-complete">Data Representation: Complete!</h2>
+
+<p>Now we can work on encrypting our secret data…<br />
+<a href="encryption.html">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Now we can work on encrypting our secret data...
+
+
+  
+
+</aside>
+
+</section>
+
+
+
+
+				</div>
+
+			</div><!-- .reveal -->
+
+
+
+
+			<div class="sidenotes">
+				<div class="content">
+					<!-- display notes here using js -->
+					<p>Loading...</p>
+				</div>
+			</div>
+
+		</div><!-- .slideshow -->
+			
+		<div class="page-content">
+
+
+
+
+		</div>
+
+
+
+		<script src="/computer-science/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/computer-science/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/computer-science/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/computer-science/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/computer-science/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/computer-science/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/computer-science/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/computer-science/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/computer-science/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
