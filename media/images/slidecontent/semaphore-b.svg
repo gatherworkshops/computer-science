@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" inkscape:version="0.43" sodipodi:version="0.32" sodipodi:docbase="C:\Documents and Settings\David Nelson\Archives\Svg" sodipodi:docname="Semaphore Alpha.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="500px"
+	 viewBox="0 0 600 500" enable-background="new 0 0 600 500" xml:space="preserve">
+<sodipodi:namedview  pagecolor="#ffffff" id="base" bordercolor="#666666" inkscape:zoom="0.5" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:cx="277.85308" inkscape:cy="238.30965" inkscape:document-units="px" inkscape:current-layer="layer5" showgrid="true" inkscape:grid-points="true" inkscape:window-width="756" inkscape:window-height="540" inkscape:window-x="378" inkscape:window-y="253">
+	</sodipodi:namedview>
+<g id="layer1" inkscape:groupmode="layer" inkscape:label="Head and Torso">
+	<path id="path7712" sodipodi:cx="250" sodipodi:cy="200" sodipodi:type="arc" sodipodi:rx="25" sodipodi:ry="25" d="M325,210
+		c0,13.807-11.193,25-25,25c-13.808,0-25-11.193-25-25s11.192-25,25-25C313.807,185,325,196.193,325,210z"/>
+	<path id="rect7718" d="M285,240h30c11.045,0,20,9.551,20,21.334v117.332c0,11.783-8.955,21.334-20,21.334h-30
+		c-11.046,0-20-9.551-20-21.334V261.334C265,249.551,273.954,240,285,240z"/>
+</g>
+<g id="layer4" inkscape:groupmode="layer" inkscape:label="Left Hand">
+	<g id="g11911">
+		<path id="rect8008" d="M360,250v50c0,5.523-4.478,10-10,10l0,0c-5.523,0-10-4.477-10-10v-50c0-5.523,4.477-10,10-10l0,0
+			C355.523,240,360,244.477,360,250z"/>
+		<rect id="rect8010" x="345" y="300" stroke="#000000" width="10" height="200"/>
+		<path id="path8014" fill="#FFFF00" d="M255,410h90v90h-90V410z"/>
+		<path id="path8016" fill="#FF0000" d="M345,410v90h-90L345,410z"/>
+		<path id="path11836" fill="#FFFF00" fill-opacity="0" stroke="#000000" stroke-linejoin="round" d="M255,410h90v90h-90V410z"/>
+	</g>
+</g>
+<g id="layer5" inkscape:groupmode="layer" inkscape:label="Right Hand">
+	<g id="g12037">
+		<path id="rect7827" d="M251.001,252.93l-50-0.002c-5.523,0.002-10-4.477-10-10l0,0c0-5.522,4.477-10.001,10-9.999l50-0.001
+			c5.522,0,10,4.478,10,10.001l0,0C261,248.452,256.523,252.93,251.001,252.93z"/>
+		<rect id="rect7829" x="1" y="237.928" stroke="#000000" stroke-width="1" width="200" height="10"/>
+		<path id="path7833" fill="#FFFF00" d="M91,337.928H1v-90h90V337.928z"/>
+		<path id="path7835" fill="#FF0000" d="M1,337.928v-90h90L1,337.928z"/>
+		<path id="path11997" fill="#FFFF00" fill-opacity="0" stroke="#000000" stroke-linejoin="round" d="M91,337.928H1v-90h90V337.928z
+			"/>
+	</g>
+</g>
+</svg>

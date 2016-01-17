@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Building a Codebook</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- google translate - language identifier -->
+        <meta name="google-translate-customization" content="a148a80643fbe5d7-b9de7b0f0180d6d8-g318479cea978092f-2b"></meta>
+
+        <!-- Bootstrap -->
+        <link href="/computer-science/theme/assets/submodules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/computer-science/assets/submodules/jquery/jquery-1.11.2.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/computer-science/theme/assets/submodules/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+        <!-- revealjs for slideshows -->
+        <link rel="stylesheet" href="/computer-science/theme/assets/submodules/revealjs/css/reveal.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/computer-science/theme/assets/css/styles.css">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/computer-science/theme/assets/submodules/prism/prism.css">
+        <script src="/computer-science/theme/assets/submodules/prism/prism.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/computer-science/favicon.ico">
+
+    </head>
+
+    <body class=" hello">
+<nav id="mainNavigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container-fluid">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/computer-science/">
+      	<img class="avatar" src="/computer-science/theme/assets/images/gw-avatar.png">
+      	Computer Science 
+        <span class="title"> | </span>
+      </a>
+
+      
+      <!-- chapter switcher -->
+      <ul class="chapter-switcher nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Building a Codebook <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            
+
+          </ul>
+        </li>
+      </ul>
+      <!-- end chapter switcher -->
+
+      
+
+    </div>
+
+
+    
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="site-nav nav navbar-nav">
+
+      	
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+		<div class="slideshow">
+
+			<div class="reveal">
+
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+
+
+
+
+
+<!-- slide -->
+<section class="title-slide"
+		
+	
+		id=""
+		data-background="/computer-science/media/images/theme/theme-tile.svg" 
+		data-background-color="#c40259"
+		data-background-size="200px" 
+		data-background-repeat="repeat"
+	
+	>
+		
+
+<p><img src="/computer-science/theme/assets/images/gw_logo.png" alt="Gather Workshops Logo" /></p>
+
+<h1 id="building-a-codebook">Building a Codebook</h1>
+<p><em>Take a look at codes through history</em></p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="semaphore">Semaphore</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/semaphore-r.png" alt="Semaphore Letter R" /></p>
+
+<p>With just two flags, how can we send a message?</p>
+
+
+<aside class="notes">
+
+Let's start out easy - have you ever seen flags like this before? 
+
+Surf lifesavers? On the beach during the summer? Swim between the flags?
+
+Yes, they are used for that, but they can also be used to send messages.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="semaphore-a-b-cs">Semaphore A B Cs</h2>
+
+<ul class="flex-list">
+  <li><img src="/computer-science/media/images/slidecontent/semaphore-a.svg" alt="Semaphore Letter A" width="150" /></li>
+  <li><img src="/computer-science/media/images/slidecontent/semaphore-b.svg" alt="Semaphore Letter B" width="150" /></li>
+  <li><img src="/computer-science/media/images/slidecontent/semaphore-c.svg" alt="Semaphore Letter C" width="150" /></li>
+</ul>
+
+<p>If this is A, B and C… what is D?</p>
+
+
+<aside class="notes">
+
+So flinging flags around in different directions can make letters,
+but how can we remember which combination goes with each letter?
+
+Lucky for us, semaphore has a few patterns.
+
+Unlucky for us, there are also a few tricks!
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="the-sensible-patterns-in-semaphore">The Sensible Patterns in Semaphore</h2>
+
+<p>The first half of the alphabet is reasonably logical:</p>
+
+<ul class="flex-list">
+  <li>
+    <iframe width="250" height="200" src="https://www.youtube.com/embed/EC-3Ql_983c" frameborder="0" allowfullscreen=""></iframe>
+    <p><strong>A to G:</strong><br />
+One arm straight down, the other ticking clockwise by 45 degrees for each letter.</p>
+  </li>
+  <li>
+    <p><strong>H to N:</strong><br />
+One arm to the bottom right, the other ticking clockwise by 45 degrees. Trick: Skip J!</p>
+  </li>
+  <li><strong>J:</strong><br />
+J is one arm straight up, one arm straight left. Weird, I know.</li>
+</ul>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="the-less-sensible-patterns-in-semaphore">The Less-Sensible Patterns in Semaphore</h2>
+
+<p>The second half of the alphabet, not so logical:</p>
+
+<ul class="flex-list">
+  <li><strong>O to S:</strong><br />
+One arm right, the other ticking clockwise.</li>
+  <li><strong>T to Z:</strong><br />
+Running out of combinations now, but same pattern.</li>
+  <li><strong>Ignore Message:</strong><br />
+Arms at top-right and bottom left, forming a slash symbol.    </li>
+</ul>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="add-semaphore-to-your-codebook">Add Semaphore to your Codebook</h2>
+
+<p>Complete the Semaphore section of your codebook,<br />
+so you can use it for the upcoming challenges.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="semaphore-challenge">Semaphore Challenge</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/semaphore-message.jpg" alt="Semaphore secret message" /></p>
+
+<p>Decode the secret message.</p>
+
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="how-big-is-semaphore">How “big” is semaphore?</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/semaphore-flag-positions.svg" alt="The 10 Semaphore flag positions" height="350" /></p>
+
+<p>That is, how many unique flag combinations are there?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="who-actually-uses-semaphore">Who actually uses Semaphore?</h2>
+
+<p><strong>Seamen</strong><br />
+Widely adopted semaphore in the 1900s, <br />
+and it is still used for emergency communications. </p>
+
+
+
+<aside class="notes">
+
+Anyone in the Navy or other defence forces should be able to understand flag semaphore.
+
+Many emergency services people will also be familiar with it.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="semaphore-is-great-and-all-but">Semaphore is great and all but…</h2>
+
+<p><strong>What about long distance?</strong></p>
+
+<p>Semaphore is great for short-range visual communication, but quite often we want to send messages to people we can’t actually see.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="morse-code">Morse Code</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/morse-code.gif" alt="Morse Code Comic" /></p>
+
+<p>Dah-dah dah-dah-dah di-dah-dit di-di-dit dit.</p>
+
+<p>Srsly tho.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="dots-and-dashes">Dots and Dashes</h2>
+
+<p>All of morse code is made up of dots and dashes,<br />
+which are communicated as long and short beeps.</p>
+
+<p>How do we know which dot and dash combination<br />
+stands for each letter?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="assigning-letters-their-code">Assigning Letters their Code</h2>
+
+<p>eitsanhurdmwgvlfbkopjxczyq</p>
+
+
+<aside class="notes">
+
+Which is longer, a dot or a dash?
+
+If we had to choose which letter should be a dot and which should be a dash out of the letters A and Z, which would be the sensible way to assign them?
+
+Letters used more often should be given shorter codes. This way, all communications are as speedy as possible.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="communicating-with-morse-code">Communicating with Morse Code</h2>
+<p><em>Dots and Dashes</em></p>
+
+<ul class="flex-list">
+  <li><img src="/computer-science/media/images/slidecontent/dot-and-dash-size.svg" alt="Dash length equals three dots" width="400" /><br />
+A dash is three times <br />
+as long as a dot</li>
+  <li><img src="/computer-science/media/images/slidecontent/dot-dash-gap-size.svg" alt="Gap size equals one dot" width="400" /><br />
+Each dot or dash is separated <br />
+by a gap the same length as a dot</li>
+</ul>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="communicating-with-morse-code">Communicating with Morse Code</h2>
+<p><em>Letters and Words</em></p>
+
+<ul class="flex-list">
+  <li><img src="/computer-science/media/images/slidecontent/letter-gap-size.svg" alt="Letter gap size equals three dots" width="400" /><br />
+Letters are separated by a gap <br />
+the same length as three dots</li>
+  <li><img src="/computer-science/media/images/slidecontent/word-gap-size.svg" alt="Word gap size equals seven dots" width="400" /><br />
+Words are separated by a gap <br />
+the size of seven dots</li>
+</ul>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="add-morse-code-to-your-codebook">Add Morse Code to your Codebook</h2>
+
+<p>Complete the Morse Code section of your codebook,<br />
+so you can use it for the upcoming challenges.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="morse-code-challenge">Morse Code Challenge</h2>
+
+<p>Decode the secret message: Bunnies Love Chocolate</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="morse-code-game">Morse Code Game</h2>
+
+<p>Listen to the Morse Code <br />
+and type the letter you hear.</p>
+
+<p><a href="http://www.kongregate.com/games/dgreisen/morse">Play Now</a></p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="how-big-is-morse-code">How “big” is Morse Code?</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/morse-code-tree.svg" alt="Morse Code Tree" height="350" /></p>
+
+<p>That is, how many unique dot-dash combinations are there?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="morse-code-is-pretty-cool-too-but">Morse Code is pretty cool too, but…</h2>
+
+<p><strong>What about storing more complex data?</strong></p>
+
+<p>Morse Code is great for communicating quickly using words and numbers, but what about if you want to send sound or an image?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="binary-code">Binary Code</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/binary-xkcd.png" alt="Binary XKCD Comic" /></p>
+
+<p>Hiding messages in bits of data.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="how-big-is-a-bit">How big is a bit?</h2>
+
+<p>At the most basic level, electronic things have two states:</p>
+
+<ul class="flex-list">
+  <li><img src="/computer-science/media/images/slidecontent/bulb-off.png" alt="Light bulb turned off" height="300" /><br />
+<strong>Off</strong></li>
+  <li><img src="/computer-science/media/images/slidecontent/bulb-on.png" alt="Light bulb turned on" height="300" /><br />
+<strong>On</strong></li>
+</ul>
+
+<p>That’s a bit.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="representing-bits">Representing Bits</h2>
+
+<ul class="flex-list">
+  <li><img src="/computer-science/media/images/slidecontent/zero-and-one.svg" alt="Zero and One" width="180" /><br />
+0 and 1</li>
+  <li><img src="/computer-science/media/images/slidecontent/white-and-black.svg" alt="White and Black" width="180" /><br />
+White and Black</li>
+  <li><img src="/computer-science/media/images/slidecontent/off-and-on.svg" alt="Off and On" width="180" /><br />
+Off and On</li>
+  <li><img src="/computer-science/media/images/slidecontent/low-and-high.svg" alt="Low and High" width="180" /><br />
+Low and High</li>
+</ul>
+
+<p>We can represent bits in lots of different ways, <br />
+but they all mean the same thing.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="coding-letters-in-binary">Coding Letters in Binary</h2>
+
+<h3 id="a1-b2-c3-d4">A=1, B=2, C=3, D=4…</h3>
+
+<p>How many bits would we need to code<br />
+all of the letters from A to Z?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="binary-combinations">Binary Combinations</h2>
+
+<ul class="flex-list">
+  <li><img src="/computer-science/media/images/slidecontent/one-bit.svg" alt="One bit allows for two states " height="300" /><br />
+<strong>One Bit</strong><br />
+Two combinations</li>
+  <li><img src="/computer-science/media/images/slidecontent/two-bits.svg" alt="Two bits allow for four combinations " height="300" /><br />
+<strong>Two Bits</strong><br />
+Four combinations</li>
+  <li><img src="/computer-science/media/images/slidecontent/three-bits.svg" alt="Three bits allow for eight combinations " height="300" /><br />
+<strong>Three Bits</strong><br />
+Eight combinations</li>
+</ul>
+
+<p>Now can you figure out how many <br />
+bits we need for 26 letters?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="counting-in-binary">Counting in Binary</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/binary-counting.svg" alt="Binary numbers 0 to 4" /></p>
+
+<p>Can you see the pattern?</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="so-how-big-is-a-bit">So how big is a bit?</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/byte-size.svg" alt="Representing numbers using bits" /></p>
+
+<p>It depends on the bit’s position!</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="add-binary-to-your-codebook">Add Binary to your Codebook</h2>
+
+<p>Complete the Binary Alphabet section of your codebook,<br />
+so you can use it for the upcoming challenges.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="binary-challenge">Binary Challenge</h2>
+
+<p><strong>01000</strong></p>
+
+<p><strong>01111</strong></p>
+
+<p><strong>01010</strong></p>
+
+<p>Decode the secret message</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<p><img src="/computer-science/theme/assets/images/thumbs-up.svg" alt="Thumbs Up!" height="200" /></p>
+
+<h2 id="codebook-complete">Codebook: Complete!</h2>
+
+<p>Okay, now let’s put our knowledge to the test…<br />
+<a href="decoding.html">Take me to the next chapter!</a></p>
+
+
+<aside class="notes">
+
+Okay, now let's put our knowledge to the test...
+
+
+  
+
+</aside>
+
+</section>
+
+
+
+
+				</div>
+
+			</div><!-- .reveal -->
+
+
+
+
+			<div class="sidenotes">
+				<div class="content">
+					<!-- display notes here using js -->
+					<p>Loading...</p>
+				</div>
+			</div>
+
+		</div><!-- .slideshow -->
+			
+		<div class="page-content">
+
+
+
+
+		</div>
+
+
+
+		<script src="/computer-science/theme/assets/submodules/revealjs/lib/js/head.min.js"></script>
+<script src="/computer-science/theme/assets/submodules/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/computer-science/theme/assets/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			/*{ src: '/computer-science/assets/submodules/revealjs/plugin/markdown/marked.js' },
+			{ src: '/computer-science/assets/submodules/revealjs/plugin/markdown/markdown.js' },*/
+			{ src: '/computer-science/theme/assets/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/computer-science/theme/assets/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/computer-science/theme/assets/submodules/sidenotes/sidenotes.js' }
+			/*{ src: '/computer-science/assets/submodules/prism/prism.js', callback: function() { Prism.highlightAll() }}*/
+		]
+	});
+    
+    function checkNotesState() {
+
+	    // show the notes on page load if notesByDefault has been 
+	    // set to true in the page's front matter.
+	    
+	      var notesByDefault = false;
+	    
+
+	    if(notesByDefault == true) {
+	    	Sidenotes.showNotes();
+	    }
+	}
+
+	
+		
+
+</script>
+
+		<script>
+
+		// adds a class 'codeblock-title' to the paragraph element
+		// directly preceding any '.highlight' code block.
+		// the title is used to give instructions on where to place
+		// the code from the code block.
+		$(document).ready( function(){
+
+			$('.highlight').prev('p').addClass('codeblock-title');
+			
+		});
+
+
+		// checkpoints are able to be clicked to go to the next slide.
+		// when clicked they also visibly update to a green style.
+		$(document).ready( function() {
+			Reveal.addEventListener( 'ready', function( event ) {
+    			
+    			$('.checkpoint').click( function(){
+					$(this).addClass('checked');
+					setTimeout( Reveal.next, 1000 );
+				});
+
+			});
+		});
+
+		</script>
+
+	</body>
+</html>
