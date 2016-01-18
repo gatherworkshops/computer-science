@@ -216,7 +216,7 @@ ul {
   .page-wrapper p {
     margin: 0 0 15px 0; }
   .page-wrapper > p:first-of-type {
-    color: #1a84cd;
+    color: #1A84CD;
     font-size: 120%;
     margin: 0 0 20px 0; }
   .page-wrapper > .row {
@@ -503,19 +503,19 @@ body.chapter {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #f3f3da;
-  background-color: #f3f3da; }
+  background: #F3F3DA;
+  background-color: #F3F3DA; }
 
 .reveal {
   font-family: "Karla", sans-serif;
   font-size: 1.75em;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: #001e39; }
+  color: #001E39; }
 
 ::selection {
-  color: white;
-  background: #ff5e99;
+  color: #fff;
+  background: #FF5E99;
   text-shadow: none; }
 
 /*********************************************
@@ -528,7 +528,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #001e39;
+  color: #001E39;
   font-family: "Lunchbox", "Karla", sans-serif;
   line-height: 0.9em;
   letter-spacing: auto;
@@ -565,7 +565,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #001e39;
+  border: 4px solid #001E39;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
