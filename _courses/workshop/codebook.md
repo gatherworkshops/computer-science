@@ -60,14 +60,16 @@ slides:
       
       The first half of the alphabet is reasonably logical:
       
-      - <iframe width="250" height="200" src="https://www.youtube.com/embed/EC-3Ql_983c" frameborder="0" allowfullscreen></iframe>
-        **A to G:**
+      - ![Animation of Semaphore A to G]([[BASE_URL]]/media/images/slidecontent/semaphore-a-to-g.gif){: width="150"}
+        **A to G**
         One arm straight down, the other ticking clockwise by 45 degrees for each letter.
 
-      - **H to N:**
+      - ![Animation of Semaphore H to N]([[BASE_URL]]/media/images/slidecontent/semaphore-h-to-n.gif){: width="150"}
+        **H to N**
         One arm to the bottom right, the other ticking clockwise by 45 degrees. Trick: Skip J!
 
-      - **J:**
+      - ![Picture of Semaphore J]([[BASE_URL]]/media/images/slidecontent/semaphore-j.gif){: width="150"}
+        **J**
         J is one arm straight up, one arm straight left. Weird, I know.
       {: .flex-list }
   
@@ -78,11 +80,14 @@ slides:
       
       The second half of the alphabet, not so logical:
       
-      - **O to S:**
+      - ![Animation of Semaphore O to S]([[BASE_URL]]/media/images/slidecontent/semaphore-o-to-s.gif){: width="150"}
+        **O to S**
         One arm right, the other ticking clockwise.
-      - **T to Z:**
+      - ![Animation of Semaphore T to Z]([[BASE_URL]]/media/images/slidecontent/semaphore-t-to-z.gif){: width="150"}
+        **T to Z**
         Running out of combinations now, but same pattern.
-      - **Ignore Message:**
+      - ![Picture of Semaphore cancel signal]([[BASE_URL]]/media/images/slidecontent/semaphore-cancel.gif){: width="150"}
+        **Ignore Message**
         Arms at top-right and bottom left, forming a slash symbol.    
       {: .flex-list }
 
@@ -102,16 +107,6 @@ slides:
       ![Semaphore secret message]([[BASE_URL]]/media/images/slidecontent/semaphore-message.jpg)
 
       Decode the secret message.
-
-        
-  - content: |
-  
-      ## How "big" is semaphore?
-
-      ![The 10 Semaphore flag positions]([[BASE_URL]]/media/images/slidecontent/semaphore-flag-positions.svg){: height="350"}
-
-
-      That is, how many unique flag combinations are there?
 
 
   - content: |
@@ -163,8 +158,10 @@ slides:
   - content: |
   
       ## Assigning Letters their Code
-      
-      eitsanhurdmwgvlfbkopjxczyq
+
+      We want to communicate as fast as possible, 
+      so the letters we use most should have the shortest codes.
+    
       
     notes: |
     
@@ -177,7 +174,7 @@ slides:
 
   - content: |
   
-      ## Communicating with Morse Code
+      ## Letters in Morse Code
       _Dots and Dashes_
       
       - ![Dash length equals three dots]([[BASE_URL]]/media/images/slidecontent/dot-and-dash-size.svg){: width="400"}
@@ -187,6 +184,51 @@ slides:
       Each dot or dash is separated 
         by a gap the same length as a dot
       {: .flex-list }
+
+
+  - content: |
+
+      ## Letter Frequencies
+
+      ![Chart of letter frequencies in English]([[BASE_URL]]/media/images/slidecontent/letter-frequencies.svg){: height="400" }
+
+      This is a chart of the letter frequencies in the English language.
+
+    notes: |
+
+      If we were to design Morse code today, we would make `e` a single dot `.`, as it is the most common letter so should have the shortest code.
+
+      Next would be `t` as it is next-most common. The letter `t` would be dot dot `..`
+
+      Third is the letter `a`. A would be a single dash, which is the next shortest code.
+
+
+  - content: |
+
+      ## Letter Frequencies from Morse's Era
+
+      Back when Mr Morse was around, 
+      he calculated the letter frequencies as follows:
+
+      ![Chart of letter frequencies from Morse's days]([[BASE_URL]]/media/images/slidecontent/old-letter-frequencies.svg){: width="700" }
+
+
+  - content: |
+
+      ## Build the Morse Code Chart
+
+      ![Empty Morse Tree]([[BASE_URL]]/media/images/slidecontent/empty-morse-tree.svg){: width="700"}
+      ![Chart of letter frequencies from Morse's days]([[BASE_URL]]/media/images/slidecontent/old-letter-frequencies.svg){: width="700" }
+
+      Let's fill in the Morse Code chart using the letter frequencies.
+  
+
+  - content: |
+
+      ## Add Morse Code to your Codebook
+
+      Complete the Morse Code section of your codebook,
+      so you can use it for the upcoming challenges.
 
 
   - content: |
@@ -201,15 +243,6 @@ slides:
         Words are separated by a gap 
         the size of seven dots
       {: .flex-list }
-  
-
-  - content: |
-
-      ## Add Morse Code to your Codebook
-
-      Complete the Morse Code section of your codebook,
-      so you can use it for the upcoming challenges.
-
 
 
   - content: |
@@ -227,15 +260,6 @@ slides:
       and type the letter you hear.
 
       [Play Now](http://www.kongregate.com/games/dgreisen/morse)
-
-  - content: |
-  
-      ## How "big" is Morse Code?
-
-      ![Morse Code Tree]([[BASE_URL]]/media/images/slidecontent/morse-code-tree.svg){: height="350"}
-
-
-      That is, how many unique dot-dash combinations are there?
 
 
   - content: |
@@ -329,11 +353,11 @@ slides:
 
   - content: |
 
-      ## So how big is a bit?
+      ## Alphabet in Binary
 
-      ![Representing numbers using bits]([[BASE_URL]]/media/images/slidecontent/byte-size.svg)
+      ![Binary letters A to D]([[BASE_URL]]/media/images/slidecontent/binary-alphabet.svg)
 
-      It depends on the bit's position!
+      We can make 1=A, 2=B, 3=C
 
 
   - content: |

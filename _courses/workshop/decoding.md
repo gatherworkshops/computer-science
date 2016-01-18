@@ -19,13 +19,13 @@ slides:
     
       ## The Game Plan
 
-      - ![Team Icon]([[BASE_URL]]/media/images/slidecontent/form-teams.svg){: width="180"}
+      - ![Team Icon]([[BASE_URL]]/media/images/slidecontent/team-icon.svg){: height="180"}
         **Form<br>Teams**
-      - ![Flag Icon]([[BASE_URL]]/media/images/slidecontent/assemble-weapons.svg){: width="180"}
+      - ![Flag Icon]([[BASE_URL]]/media/images/slidecontent/assemble-weapons.svg){: height="180"}
         **Assemble<br>Weapons**
-      - ![Award Icon]([[BASE_URL]]/media/images/slidecontent/complete-missions.svg){: width="180"}
+      - ![Award Icon]([[BASE_URL]]/media/images/slidecontent/award-icon.svg){: height="180"}
         **Complete<br>Missions**
-      - ![Trophy Icon]([[BASE_URL]]/media/images/slidecontent/emerge-victorious.svg){: width="180"}
+      - ![Trophy Icon]([[BASE_URL]]/media/images/slidecontent/trophy-icon.svg){: height="180"}
         **Emerge<br>Victorious!**
       {: .flex-list }
 

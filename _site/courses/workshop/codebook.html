@@ -208,16 +208,20 @@ Unlucky for us, there are also a few tricks!
 
 <ul class="flex-list">
   <li>
-    <iframe width="250" height="200" src="https://www.youtube.com/embed/EC-3Ql_983c" frameborder="0" allowfullscreen=""></iframe>
-    <p><strong>A to G:</strong><br />
+    <p><img src="/computer-science/media/images/slidecontent/semaphore-a-to-g.gif" alt="Animation of Semaphore A to G" width="150" /><br />
+<strong>A to G</strong><br />
 One arm straight down, the other ticking clockwise by 45 degrees for each letter.</p>
   </li>
   <li>
-    <p><strong>H to N:</strong><br />
+    <p><img src="/computer-science/media/images/slidecontent/semaphore-h-to-n.gif" alt="Animation of Semaphore H to N" width="150" /><br />
+<strong>H to N</strong><br />
 One arm to the bottom right, the other ticking clockwise by 45 degrees. Trick: Skip J!</p>
   </li>
-  <li><strong>J:</strong><br />
-J is one arm straight up, one arm straight left. Weird, I know.</li>
+  <li>
+    <p><img src="/computer-science/media/images/slidecontent/semaphore-j.gif" alt="Picture of Semaphore J" width="150" /><br />
+<strong>J</strong><br />
+J is one arm straight up, one arm straight left. Weird, I know.</p>
+  </li>
 </ul>
 
 
@@ -243,12 +247,15 @@ J is one arm straight up, one arm straight left. Weird, I know.</li>
 <p>The second half of the alphabet, not so logical:</p>
 
 <ul class="flex-list">
-  <li><strong>O to S:</strong><br />
+  <li><img src="/computer-science/media/images/slidecontent/semaphore-o-to-s.gif" alt="Animation of Semaphore O to S" width="150" /><br />
+<strong>O to S</strong><br />
 One arm right, the other ticking clockwise.</li>
-  <li><strong>T to Z:</strong><br />
+  <li><img src="/computer-science/media/images/slidecontent/semaphore-t-to-z.gif" alt="Animation of Semaphore T to Z" width="150" /><br />
+<strong>T to Z</strong><br />
 Running out of combinations now, but same pattern.</li>
-  <li><strong>Ignore Message:</strong><br />
-Arms at top-right and bottom left, forming a slash symbol.    </li>
+  <li><img src="/computer-science/media/images/slidecontent/semaphore-cancel.gif" alt="Picture of Semaphore cancel signal" width="150" /><br />
+<strong>Ignore Message</strong><br />
+Arms at top-right and bottom left, forming a slash symbol.</li>
 </ul>
 
 
@@ -299,31 +306,6 @@ so you can use it for the upcoming challenges.</p>
 <p>Decode the secret message.</p>
 
 
-
-<aside class="notes">
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="how-big-is-semaphore">How “big” is semaphore?</h2>
-
-<p><img src="/computer-science/media/images/slidecontent/semaphore-flag-positions.svg" alt="The 10 Semaphore flag positions" height="350" /></p>
-
-<p>That is, how many unique flag combinations are there?</p>
-
-
 <aside class="notes">
 
 </aside>
@@ -345,7 +327,7 @@ so you can use it for the upcoming challenges.</p>
 
 <p><strong>Seamen</strong><br />
 Widely adopted semaphore in the 1900s, <br />
-and it is still used for emergency communications. </p>
+and it is still used for emergency communications.</p>
 
 
 
@@ -448,7 +430,8 @@ stands for each letter?</p>
 
 <h2 id="assigning-letters-their-code">Assigning Letters their Code</h2>
 
-<p>eitsanhurdmwgvlfbkopjxczyq</p>
+<p>We want to communicate as fast as possible, <br />
+so the letters we use most should have the shortest codes.</p>
 
 
 <aside class="notes">
@@ -474,7 +457,7 @@ Letters used more often should be given shorter codes. This way, all communicati
 	>
 		
 
-<h2 id="communicating-with-morse-code">Communicating with Morse Code</h2>
+<h2 id="letters-in-morse-code">Letters in Morse Code</h2>
 <p><em>Dots and Dashes</em></p>
 
 <ul class="flex-list">
@@ -485,6 +468,109 @@ as long as a dot</li>
 Each dot or dash is separated <br />
 by a gap the same length as a dot</li>
 </ul>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="letter-frequencies">Letter Frequencies</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/letter-frequencies.svg" alt="Chart of letter frequencies in English" height="400" /></p>
+
+<p>This is a chart of the letter frequencies in the English language.</p>
+
+
+<aside class="notes">
+
+If we were to design Morse code today, we would make `e` a single dot `.`, as it is the most common letter so should have the shortest code.
+
+Next would be `t` as it is next-most common. The letter `t` would be dot dot `..`
+
+Third is the letter `a`. A would be a single dash, which is the next shortest code.
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="letter-frequencies-from-morses-era">Letter Frequencies from Morse’s Era</h2>
+
+<p>Back when Mr Morse was around, <br />
+he calculated the letter frequencies as follows:</p>
+
+<p><img src="/computer-science/media/images/slidecontent/old-letter-frequencies.svg" alt="Chart of letter frequencies from Morse's days" width="700" /></p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="build-the-morse-code-chart">Build the Morse Code Chart</h2>
+
+<p><img src="/computer-science/media/images/slidecontent/empty-morse-tree.svg" alt="Empty Morse Tree" width="700" /><br />
+<img src="/computer-science/media/images/slidecontent/old-letter-frequencies.svg" alt="Chart of letter frequencies from Morse's days" width="700" /></p>
+
+<p>Let’s fill in the Morse Code chart using the letter frequencies.</p>
+
+
+<aside class="notes">
+
+</aside>
+
+</section>
+
+
+
+<!-- slide -->
+<section class=""
+		
+	
+		id=""
+	
+	>
+		
+
+<h2 id="add-morse-code-to-your-codebook">Add Morse Code to your Codebook</h2>
+
+<p>Complete the Morse Code section of your codebook,<br />
+so you can use it for the upcoming challenges.</p>
 
 
 <aside class="notes">
@@ -534,29 +620,6 @@ the size of seven dots</li>
 	>
 		
 
-<h2 id="add-morse-code-to-your-codebook">Add Morse Code to your Codebook</h2>
-
-<p>Complete the Morse Code section of your codebook,<br />
-so you can use it for the upcoming challenges.</p>
-
-
-<aside class="notes">
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
 <h2 id="morse-code-challenge">Morse Code Challenge</h2>
 
 <p>Decode the secret message: Bunnies Love Chocolate</p>
@@ -585,30 +648,6 @@ so you can use it for the upcoming challenges.</p>
 and type the letter you hear.</p>
 
 <p><a href="http://www.kongregate.com/games/dgreisen/morse">Play Now</a></p>
-
-
-<aside class="notes">
-
-</aside>
-
-</section>
-
-
-
-<!-- slide -->
-<section class=""
-		
-	
-		id=""
-	
-	>
-		
-
-<h2 id="how-big-is-morse-code">How “big” is Morse Code?</h2>
-
-<p><img src="/computer-science/media/images/slidecontent/morse-code-tree.svg" alt="Morse Code Tree" height="350" /></p>
-
-<p>That is, how many unique dot-dash combinations are there?</p>
 
 
 <aside class="notes">
@@ -825,11 +864,11 @@ bits we need for 26 letters?</p>
 	>
 		
 
-<h2 id="so-how-big-is-a-bit">So how big is a bit?</h2>
+<h2 id="alphabet-in-binary">Alphabet in Binary</h2>
 
-<p><img src="/computer-science/media/images/slidecontent/byte-size.svg" alt="Representing numbers using bits" /></p>
+<p><img src="/computer-science/media/images/slidecontent/binary-alphabet.svg" alt="Binary letters A to D" /></p>
 
-<p>It depends on the bit’s position!</p>
+<p>We can make 1=A, 2=B, 3=C</p>
 
 
 <aside class="notes">

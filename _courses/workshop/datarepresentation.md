@@ -59,11 +59,14 @@ slides:
 
       ## We'll look at
 
-      - **Numbers**
+      - ![Numbers Icon]([[BASE_URL]]/media/images/slidecontent/numbers-icon.svg){: height="180"}
+        **Numbers**
         Going beyond integers.
-      - **Documents**
+      - ![Documents Icon]([[BASE_URL]]/media/images/slidecontent/documents-icon.svg){: height="180"}
+        **Documents**
         Letters and symbols.
-      - **Images**
+      - ![Images Icon]([[BASE_URL]]/media/images/slidecontent/images-icon.svg){: height="180"}
+        **Images**
         Colours in pixels.
       {: .flex-list }
   
@@ -79,7 +82,8 @@ slides:
 
       ## Negative Numbers
 
-      We usually set aside the leftmost bit to represent positive or negative.
+      We usually set aside the leftmost bit 
+      to represent positive or negative.
 
 
   - content: |
@@ -99,6 +103,8 @@ slides:
   - content: |
 
       ## ASCII
+
+      ![ASCII Cat]([[BASE_URL]]/media/images/slidecontent/ascii-art.png){: height="240"}
 
       The ASCII format is a way of storing letters, 
       numbers and symbols used in blocks of text.
@@ -239,6 +245,8 @@ slides:
   - content: |
 
       ## Bonus Challenge
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/L-v4Awj_p7g" frameborder="0" allowfullscreen></iframe>
 
       **Find as many hidden messages as you can in this video.**
 
