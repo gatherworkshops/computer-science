@@ -73,9 +73,15 @@ slides:
 
   - content: |
 
+      ## XOR Cipher
+
+      
+
+  - content: |
+
       ![Thumbs Up!]([[BASE_URL]]/theme/assets/images/thumbs-up.svg){: height="200"}
 
-      ## Codebook: Complete!
+      ## Encryption: Complete!
 
       Okay, now let's put our knowledge to the test...
       [Take me to the next chapter!](decoding.html)

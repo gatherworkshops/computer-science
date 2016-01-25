@@ -249,7 +249,9 @@ slides:
 
       ## Morse Code Challenge
       
-      Decode the secret message: Bunnies Love Chocolate
+      ![Morse Challenge]([[BASE_URL]]/media/images/slidecontent/morse-challenge.svg){: width="700"}
+
+      Decode the secret message
 
 
   - content: |
@@ -372,11 +374,7 @@ slides:
 
       ## Binary Challenge
 
-      **01000**
-
-      **01111**
-
-      **01010**
+      ![Binary Challenge]([[BASE_URL]]/media/images/slidecontent/binary-challenge.svg){: width="800"}
 
       Decode the secret message
 

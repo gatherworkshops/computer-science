@@ -73,9 +73,10 @@ slides:
 
   - content: |
 
-      ## Numbers
+      ## Positive Numbers
 
-      How do we describe a number that's not an integer?
+      We can create integers by setting bits to on or off
+      then adding up the values of those bits.
 
 
   - content: |
@@ -88,16 +89,16 @@ slides:
 
   - content: |
 
-      ## Decimals
+      ## Integers to Binary
 
-      ???
+      divide by 64, then 32, then 16, then 8, then 4, then 2
 
 
   - content: |
 
-      ## Challenge
+      ## Integers Challenge
 
-      Decode the three numbers
+      ![Integers Challenge]([[BASE_URL]]/media/images/slidecontent/integers-challenge.svg){: width="800"}
 
 
   - content: |
